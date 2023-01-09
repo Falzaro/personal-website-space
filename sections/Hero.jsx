@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import TypeWriter from 'typewriter-effect';
 
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
@@ -22,7 +23,21 @@ const Hero = () => (
           variants={textVariant(1.1)}
           className={`${styles.heroSubHeading} text-center w-2/3`}
         >
-          Software Developer and Tech Enthusiast
+          {/* Software Developer and Tech Enthusiast */}
+          <TypeWriter
+            options={{
+              loop: true,
+              delay: 50,
+              deleteSpeed: 50,
+            }}
+            onInit={(typewriter) => {
+              typewriter
+                // .pauseFor(100)
+                .typeString('Software Developer and Tech Enthusiast')
+                .pauseFor(3500)
+                .start();
+            }}
+          />
         </motion.h1>
       </div>
 
