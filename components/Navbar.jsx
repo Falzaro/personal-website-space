@@ -70,7 +70,7 @@ const Navbar = () => {
         <Dialog as="div" onClose={() => setMobileMenuOpen(false)}>
           <Dialog.Panel
             focus="true"
-            className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden w-[200px] md:w-[250px]"
+            className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden w-1/2"
           >
             <div className="flex h-9 items-center justify-between">
               <div className="flex">
