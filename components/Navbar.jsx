@@ -10,27 +10,31 @@ const Navbar = () => (
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    // Make navbar position fixed to the top of the viewport
-    // classNamae={`${styles.xPaddings} py-8 fixed`}
-    // className={`fixed top-0 left-0 w-full z-50 ${styles.yPaddings} sm:pl-16 pl-6`}
-    // className={`${styles.xPaddings} py-8 fixed relative top-0 w-full`}
     className={`${styles.xPaddings} py-8 relative top-0 z-10`}
   >
-    <div className="absolute w-[50%] inset-0 gradient-01" />
-    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
-      <img
-        src="/search.svg"
-        alt="search"
-        className="w-[24px] h-[24px] object-contain"
-      />
-      <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
-        METAVERSUS
-      </h2>
+    <div className="absolute w-[50%] inset-0 gradient-01 z-0 pointer-events-none" />
+    <div
+      className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
+    >
       <img
         src="/menu.svg"
         alt="menu"
-        className="w-[24px] h-[24px] object-contain"
+        className="w-[24px] h-[24px] object-contain -rotate-180 cursor-pointer lg:hidden"
       />
+      <div className="hidden lg:flex text-white space-x-[105px] font-medium text-[24px] [&>*]:cursor-pointer">
+        <p>About me</p>
+        <p>Experience</p>
+        <p>Skills</p>
+        <p>Projects</p>
+      </div>
+      <div className={`${styles.flexCenter} gap-2 cursor-pointer`}>
+        <img
+          src="/download.png"
+          alt="search"
+          className="w-[24px] h-[24px] object-contain mt-1"
+        />
+        <p className="text-white text-[24px] font-medium">Resume</p>
+      </div>
     </div>
   </motion.nav>
 );
