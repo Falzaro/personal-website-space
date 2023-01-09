@@ -1,13 +1,9 @@
 'use client';
 
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Dialog, Transition } from '@headlessui/react';
-import {
-  Bars3Icon,
-  XMarkIcon,
-  Squares2X2Icon,
-} from '@heroicons/react/24/outline';
+import { XMarkIcon } from '@heroicons/react/24/outline';
 
 import styles from '../styles';
 import { navVariants } from '../utils/motion';

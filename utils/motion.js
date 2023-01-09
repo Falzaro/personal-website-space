@@ -159,20 +159,3 @@ export const footerVariants = {
     },
   },
 };
-
-export const dialogVariants = {
-  in: {
-    x: 0,
-    transition: {
-      type: 'tween',
-      ease: 'anticipate',
-    },
-  },
-  out: {
-    x: '-100%',
-    transition: {
-      type: 'tween',
-      ease: 'anticipate',
-    },
-  },
-};
