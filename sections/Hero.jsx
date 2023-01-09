@@ -4,7 +4,13 @@ import { motion } from 'framer-motion';
 import TypeWriter from 'typewriter-effect';
 
 import styles from '../styles';
-import { slideIn, staggerContainer, textVariant } from '../utils/motion';
+import {
+  fadeIn,
+  navVariants,
+  slideIn,
+  staggerContainer,
+  textVariant,
+} from '../utils/motion';
 
 const Hero = () => (
   <section className={`${styles.yPaddings}`}>
@@ -16,38 +22,36 @@ const Hero = () => (
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className="flex justify-center items-center flex-col relative z-10 mb-10">
-        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+        <motion.h1 variants={textVariant(0.8)} className={styles.heroHeading}>
           Hi, I'm Fitri!
         </motion.h1>
         <motion.h1
-          variants={textVariant(1.1)}
+          variants={textVariant(0.8)}
           className={`${styles.heroSubHeading} text-center w-2/3`}
         >
-          {/* Software Developer and Tech Enthusiast */}
           <TypeWriter
             options={{
-              loop: true,
-              delay: 50,
-              deleteSpeed: 50,
+              delay: 40,
             }}
             onInit={(typewriter) => {
               typewriter
-                // .pauseFor(100)
                 .typeString('Software Developer and Tech Enthusiast')
-                .pauseFor(3500)
                 .start();
             }}
           />
         </motion.h1>
       </div>
 
-      <div className="relative w-[80%] mx-auto">
+      <motion.div
+        variants={fadeIn('up', 'tween', 1.6, 1)}
+        className="relative w-[80%] mx-auto"
+      >
         <img
           src="/hero.png"
           alt="hero_cover"
           className="w-full h-full object-cover z-10 relative"
         />
-      </div>
+      </motion.div>
       {/* <motion.div
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
