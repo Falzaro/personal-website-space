@@ -27,14 +27,16 @@ const Navbar = () => (
         <p>Skills</p>
         <p>Projects</p>
       </div>
-      <div className={`${styles.flexCenter} gap-2 cursor-pointer`}>
-        <img
-          src="/download.png"
-          alt="search"
-          className="w-[24px] h-[24px] object-contain mt-1"
-        />
-        <p className="text-white text-[24px] font-medium">Resume</p>
-      </div>
+      <a href="/Fitri_Rozi_Resume_2023.pdf" download>
+        <div className={`${styles.flexCenter} gap-2 cursor-pointer`}>
+          <img
+            src="/download.png"
+            alt="search"
+            className="w-[24px] h-[24px] object-contain mt-1"
+          />
+          <p className="text-white text-[24px] font-medium">Resume</p>
+        </div>
+      </a>
     </div>
   </motion.nav>
 );
