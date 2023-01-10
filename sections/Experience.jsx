@@ -13,7 +13,7 @@ const Experience = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.4 }}
       className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}
     >
       <TypingText title="| Experience" textStyles="text-center" />
@@ -21,23 +21,35 @@ const Experience = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <div className="flex items-center mx-auto">
+        {/* Company name */}
+        <div className="flex items-center mx-auto lg:mb-10">
           <img
             src="/single planet netapp.svg"
             alt="get-started"
             className="w-1/4 h-1/4 object-contain -mb-2"
           />
           <div className="flex flex-col">
-            <TitleText title={<>NetApp</>} />
-            <p className="text-[#8B949E]">September 2020 - December 2022</p>
+            <TitleText title={<>NetApp</>} textStyles="lg:text-center" />
+            <p className="text-[#8B949E] lg:text-lg">
+              September 2020 - December 2022
+            </p>
           </div>
         </div>
-        <div className="mt-[31px] flex flex-col max-w-[500px] md:max-w-[600px] gap-[24px] mx-auto">
-          <div className={`${styles.card}`}>
-            <p className="text-white text-2xl md:text-3xl font-medium pb-6 px-4">
+        {/* Job Description */}
+        <motion.div
+          variants={fadeIn('right', 'tween', 0.5, 1)}
+          className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-12 xl:gap-18 2xl:gap-24 mx-auto"
+        >
+          {/* Card */}
+          <div
+            className={`${styles.card} max-w-[500px] md:max-w-[600px] lg:max-w-[550px]`}
+          >
+            {/* Job title */}
+            <p className="text-white text-2xl md:text-3xl 2xl:text-4xl font-medium pb-6 px-4">
               Full Stack Developer
             </p>
-            <ul className="list-disc text-white px-4 space-y-6 md:text-xl">
+            {/* Job summary */}
+            <ul className="list-disc text-white px-4 space-y-6 lg:space-y-8 lg:leading-8 2xl:leading-9 md:text-xl 2xl:text-xl">
               <li>
                 Spearheaded the front-end development of the reservation
                 application, taking the project from concept to beta release.
@@ -56,7 +68,17 @@ const Experience = () => (
               </li>
             </ul>
           </div>
-        </div>
+          <motion.div
+            variants={fadeIn('left', 'tween', 1, 1)}
+            className="w-[50%] max-w-[600px] max-h-[650px] 2xl:max-h-[700px] hidden lg:block h-screen flex-1"
+          >
+            <img
+              src="/netapp.png"
+              alt="netapp"
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </motion.div>
+        </motion.div>
       </motion.div>
     </motion.div>
   </section>

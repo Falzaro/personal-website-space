@@ -8,11 +8,12 @@ const styles = {
   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
 
-  card: 'flex flex-col border border-gray-600 p-8 rounded-lg md:text-lg bg-gradient-to-r from-white-400 to-white-500 w-full',
+  card: 'flex flex-col border border-gray-600 p-8 md:p-10 lg:p-12 rounded-xl md:text-lg bg-gradient-to-r from-white-400 to-white-500 w-full',
 
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-start items-start',
   flexEnd: 'flex justify-end',
+  justifyBetween: 'flex justify-between items-center',
   navPadding: 'pt-[98px]',
 
   // hero section
