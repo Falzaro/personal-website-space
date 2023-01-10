@@ -1,7 +1,7 @@
 import { Footer, Navbar } from '../components';
 import {
   About,
-  Explore,
+  Experience,
   Feedback,
   GetStarted,
   Hero,
@@ -15,13 +15,13 @@ const Page = () => (
     <Navbar />
     <Hero />
     <About />
-    <Explore />
-    <GetStarted />
-    <WhatsNew />
-    <World />
+    <Experience />
+    {/* <GetStarted /> */}
+    {/* <WhatsNew /> */}
+    {/* <World />
     <Insights />
     <Feedback />
-    <Footer />
+    <Footer /> */}
   </div>
 );
 
