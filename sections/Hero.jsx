@@ -38,7 +38,7 @@ const Hero = () => (
 
       <motion.div
         variants={fadeIn('up', 'tween', 1.6, 1)}
-        className="relative w-[80%] mx-auto"
+        className="relative w-[80%] mx-auto -mb-12"
       >
         <img
           src="/hero.png"

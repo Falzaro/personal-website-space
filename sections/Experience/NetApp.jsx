@@ -2,12 +2,12 @@
 
 import { motion } from 'framer-motion';
 
-import { TitleText, TypingText } from '../components';
-import { staggerContainer, fadeIn } from '../utils/motion';
+import { TitleText, TypingText } from '../../components';
+import { staggerContainer, fadeIn } from '../../utils/motion';
 
-import styles from '../styles';
+import styles from '../../styles';
 
-const Experience = () => (
+const NetApp = () => (
   <section className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
@@ -84,4 +84,4 @@ const Experience = () => (
   </section>
 );
 
-export default Experience;
+export default NetApp;

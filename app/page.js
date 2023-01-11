@@ -1,7 +1,7 @@
 import { Footer, Navbar } from '../components';
 import {
   About,
-  Experience,
+  // Experience,
   Feedback,
   GetStarted,
   Hero,
@@ -9,6 +9,7 @@ import {
   WhatsNew,
   World,
 } from '../sections';
+import Experience from '../sections/Experience/Experience';
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
