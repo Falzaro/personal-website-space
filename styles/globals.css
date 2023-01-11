@@ -56,10 +56,10 @@
 
 .gradient-03 {
   position: absolute;
-  width: 404px;
+  width: 204px;
   height: 800px;
-  left: 20%;
-  top: 5%;
+  left: 0%;
+  top: 0%;
 
   background: rgba(149, 66, 232, 0.35);
   filter: blur(175px);
@@ -70,7 +70,7 @@
   position: absolute;
   width: 304px;
   height: 100vh;
-  left: 30%;
+  right: 5%;
   top: 10%;
 
   background: rgba(45, 72, 152, 0.75);

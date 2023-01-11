@@ -13,7 +13,7 @@ const About = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+      className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col gradient-05 rounded-2xl lg:py-8 p-6 pt-8 md:p-10 lg:px-16`}
     >
       <TypingText title="| About me" textStyles="text-center" />
 
@@ -27,12 +27,13 @@ const About = () => (
         </span>{' '}
         in software development. I have contributed to the development of
         several <span className="font-extrabold text-white">large-scale</span>{' '}
-        web applications, including a a proprietary reservation system for a{' '}
+        web applications, including a proprietary reservation system for a{' '}
         <span className="font-extrabold text-white">Fortune 500 company</span>{' '}
-        and a mobile app for a college with over 700 students and faculty. I am
-        passionate about using technology to create meaningful change and love
-        to work with a team of like-minded individuals who share similar
-        passion.
+        and a mobile app for a college with{' '}
+        <span className="font-extrabold text-white">over 700 students</span> and
+        faculty. I am passionate about using technology to create meaningful
+        change and love to work with a team of like-minded individuals who share
+        similar passion.
       </motion.p>
 
       {/* <motion.img

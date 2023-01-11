@@ -42,13 +42,15 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(true)}
         />
         <div className="hidden lg:flex text-white space-x-[105px] font-medium text-[24px] [&>*]:cursor-pointer">
-          <p>About me</p>
-          <p>Experience</p>
-          <p>Skills</p>
-          <p>Projects</p>
+          <p className={`${styles.navItem}`}>About me</p>
+          <p className={`${styles.navItem}`}>Experience</p>
+          <p className={`${styles.navItem}`}>Skills</p>
+          <p className={`${styles.navItem}`}>Projects</p>
         </div>
         <a href="/Fitri_Rozi_Resume_2023.pdf" download>
-          <div className={`${styles.flexCenter} gap-2 cursor-pointer`}>
+          <div
+            className={`${styles.flexCenter} ${styles.navItem} gap-2 cursor-pointer `}
+          >
             <img
               src="/download.png"
               alt="search"

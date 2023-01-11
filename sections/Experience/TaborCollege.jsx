@@ -162,10 +162,10 @@ const TaborCollege = () => {
               </ul>
             </div>
           </motion.div>
-          <div className="p-20">
+          <div className="p-12 mb-10">
             <Slider
               afterChange={(current) => setCurrentSlide(current)}
-              className="mx-auto max-w-[1260px] cursor-grab"
+              className="mx-auto max-w-[1260px] cursor-grab gradient-05 rounded-2xl pt-8"
               {...settings(currentSlide)}
               appendDots={Dots}
             >
