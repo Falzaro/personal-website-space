@@ -14,7 +14,8 @@ const SensorDynamix = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}
+      // className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}
+      className="max-w-[1440px] mx-auto flex flex-col gap-8"
     >
       <motion.div
         variants={fadeIn('up', 'tween', 0.2, 1)}

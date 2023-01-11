@@ -159,3 +159,29 @@ export const footerVariants = {
     },
   },
 };
+
+export const cardsWrapper = {
+  visible: {
+    x: 0,
+    transition: {
+      ease: 'easeInOut',
+    },
+  },
+  hidden: {
+    x: -100,
+    transition: {
+      ease: 'easeInOut',
+    },
+  },
+};
+
+export const innerVariants = {
+  visible: (i) => ({
+    x: 0,
+    transition: { duration: 1, delay: i * 0.1 },
+  }),
+  hidden: (i) => ({
+    x: '-100vw',
+    transition: { duration: 1, delay: i * 0.1 },
+  }),
+};

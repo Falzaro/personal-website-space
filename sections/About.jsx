@@ -35,12 +35,12 @@ const About = () => (
         passion.
       </motion.p>
 
-      <motion.img
+      {/* <motion.img
         variants={fadeIn('up', 'tween', 0.3, 1)}
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[18px] h-[28px] object-contain mt-[28px]"
-      />
+      /> */}
     </motion.div>
   </section>
 );
