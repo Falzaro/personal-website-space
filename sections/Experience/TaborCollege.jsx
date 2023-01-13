@@ -50,7 +50,7 @@ const settings = (currentSlide) => ({
   infinite: true,
   speed: 400,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 4000,
   slidesToShow: 3,
   slidesToScroll: 1,
   initialSlide: 0,
@@ -130,19 +130,19 @@ const TaborCollege = () => {
           </div>
           {/* Job Description */}
           <motion.div
-            variants={fadeIn('up', 'tween', 0.5, 1)}
-            className="mt-[31px] w-full xl:w-[87%] flex items-center justify-center gap-8 lg:gap-12 xl:gap-18 2xl:gap-24 mx-auto"
+            variants={fadeIn('right', 'tween', 0.5, 1)}
+            className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-12 xl:gap-18 2xl:gap-24 mx-auto"
           >
             {/* Card */}
             <div
-              className={`${styles.card} max-w-[500px] md:max-w-[600px] lg:max-w-full`}
+              className={`${styles.card} max-w-[500px] md:max-w-[600px] lg:max-w-[550px]`}
             >
               {/* Job title */}
-              <p className="text-white text-2xl md:text-3xl 2xl:text-4xl font-medium pb-6 px-4 lg:mb-5">
+              <p className="text-white text-2xl md:text-3xl 2xl:text-4xl font-medium pb-6 px-4">
                 Team Lead & Tech Lead
               </p>
               {/* Job summary */}
-              <ul className="lg:grid lg:grid-cols-2 flex flex-col gap-8 lg:gap-y-12 lg:gap-x-12 md:gap-x-16 items-start list-disc text-white px-4 lg:leading-8 2xl:leading-9 md:text-xl 2xl:text-xl">
+              <ul className="list-disc text-white px-4 space-y-6 lg:space-y-8 lg:leading-8 2xl:leading-9 md:text-xl 2xl:text-xl">
                 <li>
                   Led a team of five to develop a mobile app using React-Native
                   for 500+ students and faculty.
@@ -161,8 +161,18 @@ const TaborCollege = () => {
                 </li>
               </ul>
             </div>
+            <motion.div
+              variants={fadeIn('left', 'tween', 1, 1)}
+              className="w-[50%] max-w-[600px] max-h-[600px] 2xl:max-h-[650px] hidden lg:block h-screen flex-1"
+            >
+              <img
+                src="/spaceship.png"
+                alt="spaceship"
+                className="w-full h-full object-contain rounded-xl"
+              />
+            </motion.div>
           </motion.div>
-          <div className="p-12 mb-10">
+          <div className="p-12 mb-10 lg:mt-5">
             <Slider
               afterChange={(current) => setCurrentSlide(current)}
               className="mx-auto max-w-[1260px] cursor-grab gradient-05 rounded-2xl pt-8"

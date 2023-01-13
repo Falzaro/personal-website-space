@@ -1,7 +1,7 @@
 const styles = {
   // innerWidth: '2xl:max-w-[1440px] w-full',
   innerWidth: '2xl:max-w-[1280px] w-full',
-  interWidth: 'lg:w-[80%] w-[100%]',
+  interWidth: 'lg:w-[90%] w-[100%]',
 
   paddings: 'sm:px-16 sm:pt-16 xs:px-8 xs:pt-8 px-6 pt-12',
   yPaddings: 'sm:py-16 xs:py-8 py-12',
@@ -12,7 +12,8 @@ const styles = {
   card: 'flex flex-col border border-gray-600 p-8 md:p-10 lg:p-12 rounded-xl md:text-lg bg-gradient-to-r from-white-400 to-white-500 w-full',
   mockupCard:
     'flex flex-col border border-gray-600 p-6 w-full max-w-md lg:max-w-[365px] lg:mx-h-[250px] mx-auto overflow-hidden shadow-lg rounded-lg cursor-pointer',
-  navItem: 'hover:bg-slate-900 py-3 px-6 rounded-full',
+  navItem: 'xl:hover:bg-slate-900 xl:py-3 xl:px-6 rounded-full',
+  // navItem: 'hover:bg-slate-900 py-3 px-6 rounded-full',
 
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-start items-start',

@@ -36,7 +36,7 @@ const NetApp = () => (
             </p>
           </div>
         </div>
-        {/* Job Description */}
+        {/* section */}
         <motion.div
           variants={fadeIn('right', 'tween', 0.5, 1)}
           className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-12 xl:gap-18 2xl:gap-24 mx-auto"
@@ -71,12 +71,12 @@ const NetApp = () => (
           </div>
           <motion.div
             variants={fadeIn('left', 'tween', 1, 1)}
-            className="w-[50%] max-w-[600px] max-h-[650px] 2xl:max-h-[700px] hidden lg:block h-screen flex-1"
+            className="w-[50%] max-w-[600px] max-h-[650px] 2xl:max-h-[680px] hidden lg:block h-screen flex-1"
           >
             <img
               src="/netapp.png"
               alt="netapp"
-              className="w-full h-full object-cover rounded-xl"
+              className="w-full h-full object-contain rounded-xl"
             />
           </motion.div>
         </motion.div>
