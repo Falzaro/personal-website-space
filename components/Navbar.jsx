@@ -35,7 +35,7 @@ const Navbar = () => {
       whileInView="show"
       className={`${styles.xPaddings} py-8 relative top-0 z-10`}
     >
-      <div className="absolute w-[50%] inset-0 gradient-01 z-0 pointer-events-none" />
+      <div className="absolute w-[50%] inset-0 gradient-01 z-11 pointer-events-none" />
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
       >
