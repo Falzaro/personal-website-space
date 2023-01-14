@@ -63,20 +63,16 @@ const NetApp = () => (
                 Demonstrated expertise in web security by configuring Apache and
                 Axios to handle and maintain access tokens from Azure.
               </li>
-              <li>
-                Gained mastery in Git, Bitbucket, Atlassian, and other project
-                management and collaboration tools.
-              </li>
             </ul>
           </div>
           <motion.div
             variants={fadeIn('up', 'tween', 0.8, 1)}
-            className="w-[50%] max-w-[600px] max-h-[650px] 2xl:max-h-[680px] hidden lg:block h-screen flex-1"
+            className="w-[50%] max-w-[500px] max-h-[550px] hidden lg:block h-screen flex-1"
           >
             <img
               src="/netapp.png"
               alt="netapp"
-              className="w-full h-full object-contain rounded-xl"
+              className="w-full h-full object-cover rounded-xl"
             />
           </motion.div>
         </motion.div>

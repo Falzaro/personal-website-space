@@ -1,15 +1,5 @@
-import { Footer, Navbar } from '../components';
-import {
-  About,
-  // Experience,
-  Feedback,
-  Skills,
-  Hero,
-  Insights,
-  WhatsNew,
-  World,
-  Projects,
-} from '../sections';
+import { Navbar } from '../components';
+import { About, Skills, Hero, Projects, Footer } from '../sections';
 import Experience from '../sections/Experience/Experience';
 
 const Page = () => (
@@ -19,12 +9,8 @@ const Page = () => (
     <About />
     <Experience />
     <Skills />
-    {/* <Projects /> */}
-    {/* <Insights /> */}
-    {/* <WhatsNew /> */}
-    {/* <World />
-    <Feedback />
-    <Footer /> */}
+    <Projects />
+    <Footer />
   </div>
 );
 

@@ -8,10 +8,11 @@ const styles = {
   xPaddings: 'sm:px-16 px-6',
   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
   bottomPaddings: 'sm:pb-16 xs:pb-8 pb-12',
+  hoverPadding: 'hover:px-4 hover:py-2',
 
   card: 'flex flex-col border border-gray-600 p-8 md:p-10 lg:p-12 rounded-xl md:text-lg bg-gradient-to-r from-white-400 to-white-500 w-full',
   mockupCard:
-    'flex flex-col border border-gray-600 p-6 w-full max-w-md lg:max-w-[365px] lg:mx-h-[250px] mx-auto overflow-hidden shadow-lg rounded-lg cursor-pointer',
+    'flex flex-col border border-gray-600 p-6 w-full max-w-md lg:max-w-[290px] lg:mx-h-[250px] mx-auto overflow-hidden shadow-lg rounded-lg cursor-pointer transform-origin-center transition-transform duration-200',
   navItem: 'xl:hover:bg-slate-900 xl:py-3 xl:px-6 rounded-full',
   // navItem: 'hover:bg-slate-900 py-3 px-6 rounded-full',
 

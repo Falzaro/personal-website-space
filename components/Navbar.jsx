@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Dialog, Transition } from '@headlessui/react';
 import { XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-scroll';
 
 import styles from '../styles';
 import { navVariants } from '../utils/motion';

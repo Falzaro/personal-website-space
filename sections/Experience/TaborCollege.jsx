@@ -130,7 +130,7 @@ const TaborCollege = () => {
           {/* Job Description */}
           <motion.div
             variants={fadeIn('up', 'tween', 0.5, 1)}
-            className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-12 xl:gap-18 2xl:gap-24 mx-auto"
+            className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-12 xl:gap-20 mx-auto"
           >
             {/* Card */}
             <div
@@ -154,15 +154,11 @@ const TaborCollege = () => {
                   Designed a map that displays the locations of classrooms and
                   buildings using the Google Maps API.
                 </li>
-                <li>
-                  Successfully drove the entire team to follow scrum and
-                  software practices with Github to meet project deliverables.
-                </li>
               </ul>
             </div>
             <motion.div
               variants={fadeIn('up', 'tween', 0.8, 1)}
-              className="w-[50%] max-w-[600px] max-h-[600px] 2xl:max-h-[650px] hidden lg:block h-screen flex-1"
+              className="w-[50%] max-w-[500px] max-h-[500px] hidden lg:block h-screen flex-1"
             >
               <img
                 src="/spaceship.png"
@@ -193,6 +189,7 @@ const TaborCollege = () => {
             </Slider>
           </div>
         </motion.div>
+        <div className="gradient-03 z-0" />
       </motion.div>
     </section>
   );

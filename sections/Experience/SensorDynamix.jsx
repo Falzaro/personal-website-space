@@ -46,9 +46,7 @@ const SensorDynamix = () => (
         className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-24 xl:gap-24 2xl:gap-40 mx-auto flex-col lg:flex-row"
       >
         {/* Card */}
-        <div
-          className={`${styles.card} max-w-[500px] md:max-w-[600px] lg:max-w-[550px]`}
-        >
+        <div className={`${styles.card} max-w-[500px] lg:max-w-[550px]`}>
           {/* Job title */}
           <p className="text-white text-2xl md:text-3xl 2xl:text-4xl font-medium pb-6 px-4">
             Software Engineer & UI/UX Designer
@@ -56,26 +54,22 @@ const SensorDynamix = () => (
           {/* Job summary */}
           <ul className="list-disc text-white px-4 space-y-6 lg:space-y-8 lg:leading-8 2xl:leading-9 md:text-xl 2xl:text-xl">
             <li>
-              Spearheaded the front-end development of the reservation
-              application, taking the project from concept to beta release.
+              Developed a cross-platform mobile app and website using React
+              Native and ReactJS frameworks.
             </li>
             <li>
-              Created user-friendly reservation system and maintained PostgreSQL
-              databases and Django Rest Framework APIs.
+              Integrated OAuth and Firebase Authentication to allow users to
+              sign in with their Google accounts.
             </li>
             <li>
-              Demonstrated expertise in web security by configuring Apache and
-              Axios to handle and maintain access tokens from Azure.
-            </li>
-            <li>
-              Gained mastery in Git, Bitbucket, Atlassian, and other project
-              management and collaboration tools.
+              Designed a website and mobile app using Adobe XD, with over 200
+              artboards.
             </li>
           </ul>
         </div>
         <motion.div
           variants={fadeIn('up', 'tween', 0.8, 1)}
-          className="flex flex-col gap-8 lg:gap-14 2xl:gap-16"
+          className="flex flex-col gap-8 lg:gap-10"
         >
           <div className={`${styles.mockupCard}`}>
             <img

@@ -7,7 +7,7 @@ import { fadeIn } from '../utils/motion';
 const SkillsCard = ({ source, title, items, delay }) => (
   <motion.div
     variants={fadeIn('up', 'tween', delay, 1)}
-    className="flex flex-col h-[690px] lg:h-[670px] max-w-[320px] lg:max-w-[260px] rounded-lg bg-[#21262D] shadow-xl z-20"
+    className="flex flex-col h-[690px] lg:h-[650px] max-w-[320px] lg:max-w-[260px] rounded-lg bg-[#21262D] shadow-xl z-20"
   >
     <div className="max-h-[262px]">
       <img src={source} alt={title} className="w-full h-full object-contain" />

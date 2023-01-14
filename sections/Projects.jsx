@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
-import { insights } from '../constants';
 import { staggerContainer } from '../utils/motion';
-import { InsightCard, TitleText, TypingText } from '../components';
+import { TitleText, TypingText } from '../components';
+import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section className={`${styles.paddings} mb-24 relative z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -16,15 +16,16 @@ const Projects = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| Insight" textStyles="text-center" />
+      <TypingText title="| Projects" textStyles="text-center" />
       <TitleText
-        title={<>Insight about metaverse</>}
-        textStyles="text-center"
+        title={<>Explore spectacular projects I've put together!</>}
+        textStyles="text-center md:text-[42px]"
       />
-      <div className="mt-[50px] flex flex-col gap-[30px]">
-        {insights.map((item, index) => (
-          <InsightCard key={`insight-${index}`} {...item} index={index + 1} />
-        ))}
+      <div className="flex flex-wrap justify-center mt-20 gap-16 lg:gap-x-24 lg:gap-y-18 mx-auto">
+        <ProjectCard name="music app" source="/music app.png" />
+        <ProjectCard name="movies app" source="/movies app.png" />
+        <ProjectCard name="social media app" source="/social media app.png" />
+        <ProjectCard name="food app" source="/food app.png" />
       </div>
     </motion.div>
   </section>
