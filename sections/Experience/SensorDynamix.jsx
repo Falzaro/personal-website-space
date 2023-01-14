@@ -71,26 +71,38 @@ const SensorDynamix = () => (
           variants={fadeIn('up', 'tween', 0.8, 1)}
           className="flex flex-col gap-8 lg:gap-10"
         >
-          <div className={`${styles.mockupCard}`}>
-            <img
-              className="w-full object-contain"
-              src="/website mockup.png"
-              alt="website mockup"
-            />
-            <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
-              Website Mockup
-            </p>
-          </div>
-          <div className={`${styles.mockupCard}`}>
-            <img
-              className="w-full object-contain"
-              src="/mobile mockup.png"
-              alt="mobile mockup"
-            />
-            <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
-              Mobile Mockup
-            </p>
-          </div>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://xd.adobe.com/view/4061448c-8e8b-4352-8657-0d6573552a15-1532/"
+          >
+            <div className={`${styles.mockupCard}`}>
+              <img
+                className="w-full object-contain"
+                src="/website mockup.png"
+                alt="website mockup"
+              />
+              <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
+                Website Mockup
+              </p>
+            </div>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://xd.adobe.com/view/6c6b2732-ee16-4dfb-aff8-026d25231d2f-3938/"
+          >
+            <div className={`${styles.mockupCard}`}>
+              <img
+                className="w-full object-contain"
+                src="/mobile mockup.png"
+                alt="mobile mockup"
+              />
+              <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
+                Mobile Mockup
+              </p>
+            </div>
+          </a>
         </motion.div>
       </motion.div>
     </motion.div>

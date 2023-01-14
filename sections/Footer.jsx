@@ -6,7 +6,7 @@ const Footer = () => (
       <p className="text-2xl text-white pb-5 text-center font-semibold">
         Let's work together!
       </p>
-      <div className="flex justify-center items-center gap-5 py-2">
+      <div className="flex justify-center items-center gap-8 py-2">
         <a
           href="mailto:fitrirozi1@gmail.com"
           target="_blank"

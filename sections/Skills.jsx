@@ -8,17 +8,17 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import SkillsCard from '../components/SkillsCard';
 
 const Skills = () => (
-  <section className={`${styles.paddings} relative z-10 mt-10`}>
-    <div className="gradient-04 left-0 top-20" />
-    <div className="gradient-04" />
+  <section id="skills" className={`${styles.paddings} relative z-10 mt-10`}>
+    <div className="gradient-04 left-0 top-20 pointer-events-none" />
+    <div className="gradient-04 pointer-events-none" />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.4 }}
+      viewport={{ once: true, amount: 0.3 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title="| Technical skills" textStyles="text-center" />
+      <TypingText title="| skills" textStyles="text-center" />
       <motion.div variants={fadeIn('up', 'tween', 0.3, 1)}>
         <TitleText
           title={

@@ -10,16 +10,19 @@ import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
 const navigation = [
-  { name: 'About me', href: '#' },
-  { name: 'Experience', href: '#' },
-  { name: 'Skills', href: '#' },
-  { name: 'Projects', href: '#' },
+  { name: 'About me', section: 'aboutMe' },
+  { name: 'Experience', section: 'experience' },
+  { name: 'Skills', section: 'skills' },
+  { name: 'Projects', section: 'projects' },
 ];
 
 const social = [
-  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/fitri-rozi/' },
-  { name: 'Github', href: '' },
-  { name: 'Gmail', href: '' },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/kevin-lee-7b1b3b1b3/',
+  },
+  { name: 'Github', href: 'https://github.com/Falzaro' },
+  { name: 'Gmail', href: 'mailto:fitrirozi1@gmail.com' },
 ];
 
 const Navbar = () => {
@@ -43,10 +46,18 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(true)}
         />
         <div className="hidden lg:flex text-white space-x-[105px] font-medium text-[24px] [&>*]:cursor-pointer">
-          <p className={`${styles.navItem}`}>About me</p>
-          <p className={`${styles.navItem}`}>Experience</p>
-          <p className={`${styles.navItem}`}>Skills</p>
-          <p className={`${styles.navItem}`}>Projects</p>
+          <Link to="aboutMe" className={`${styles.navItem}`}>
+            About me
+          </Link>
+          <Link to="experience" className={`${styles.navItem}`}>
+            Experience
+          </Link>
+          <Link to="skills" className={`${styles.navItem}`}>
+            Skills
+          </Link>
+          <Link to="projects" className={`${styles.navItem}`}>
+            Projects
+          </Link>
         </div>
         <a href="/Fitri_Rozi_Resume_2023.pdf" download>
           <div
@@ -91,13 +102,14 @@ const Navbar = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10"
+                      to={item.section}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-400/10 no-underline cursor-pointer"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
                 <div className="py-6">

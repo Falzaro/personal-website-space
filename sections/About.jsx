@@ -6,7 +6,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 import { TypingText } from '../components';
 
 const About = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section id="aboutMe" className={`${styles.paddings} relative z-10`}>
     <div className="gradient-02 z-0" />
     <motion.div
       variants={staggerContainer}
@@ -16,7 +16,6 @@ const About = () => (
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col gradient-05 rounded-2xl lg:py-8 p-6 pt-8 md:p-10 lg:px-16`}
     >
       <TypingText title="| About me" textStyles="text-center" />
-
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal md:text-[28px] text-[20px] text-center text-secondary-white"

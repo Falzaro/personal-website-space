@@ -8,7 +8,7 @@ import { TitleText, TypingText } from '../components';
 import ProjectCard from '../components/ProjectCard';
 
 const Projects = () => (
-  <section className={`${styles.paddings} mb-24 relative z-10`}>
+  <section id="projects" className={`${styles.paddings} mb-24 relative z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
