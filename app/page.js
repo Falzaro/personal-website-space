@@ -3,11 +3,12 @@ import {
   About,
   // Experience,
   Feedback,
-  GetStarted,
+  Skills,
   Hero,
   Insights,
   WhatsNew,
   World,
+  Projects,
 } from '../sections';
 import Experience from '../sections/Experience/Experience';
 
@@ -17,10 +18,11 @@ const Page = () => (
     <Hero />
     <About />
     <Experience />
-    {/* <GetStarted /> */}
+    <Skills />
+    {/* <Projects /> */}
+    {/* <Insights /> */}
     {/* <WhatsNew /> */}
     {/* <World />
-    <Insights />
     <Feedback />
     <Footer /> */}
   </div>

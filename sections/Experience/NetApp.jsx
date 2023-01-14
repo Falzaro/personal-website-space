@@ -38,7 +38,7 @@ const NetApp = () => (
         </div>
         {/* section */}
         <motion.div
-          variants={fadeIn('right', 'tween', 0.5, 1)}
+          variants={fadeIn('up', 'tween', 0.5, 1)}
           className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-12 xl:gap-18 2xl:gap-24 mx-auto"
         >
           {/* Card */}
@@ -70,7 +70,7 @@ const NetApp = () => (
             </ul>
           </div>
           <motion.div
-            variants={fadeIn('left', 'tween', 1, 1)}
+            variants={fadeIn('up', 'tween', 0.8, 1)}
             className="w-[50%] max-w-[600px] max-h-[650px] 2xl:max-h-[680px] hidden lg:block h-screen flex-1"
           >
             <img

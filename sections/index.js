@@ -1,7 +1,8 @@
 import Hero from './Hero';
 import About from './About';
 import Experience from './Experience';
-import GetStarted from './GetStarted';
+import Skills from './Skills';
+import Projects from './Projects';
 import WhatsNew from './WhatsNew';
 import World from './World';
 import Insights from './Insights';
@@ -11,7 +12,8 @@ export {
   Hero,
   About,
   Experience,
-  GetStarted,
+  Skills,
+  Projects,
   WhatsNew,
   World,
   Insights,

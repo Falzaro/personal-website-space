@@ -104,7 +104,6 @@ const TaborCollege = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.4 }}
-        // className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}
         className="2xl:max-w-[1440px] mx-auto flex flex-col gap-8"
       >
         <motion.div
@@ -130,7 +129,7 @@ const TaborCollege = () => {
           </div>
           {/* Job Description */}
           <motion.div
-            variants={fadeIn('right', 'tween', 0.5, 1)}
+            variants={fadeIn('up', 'tween', 0.5, 1)}
             className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-12 xl:gap-18 2xl:gap-24 mx-auto"
           >
             {/* Card */}
@@ -162,7 +161,7 @@ const TaborCollege = () => {
               </ul>
             </div>
             <motion.div
-              variants={fadeIn('left', 'tween', 1, 1)}
+              variants={fadeIn('up', 'tween', 0.8, 1)}
               className="w-[50%] max-w-[600px] max-h-[600px] 2xl:max-h-[650px] hidden lg:block h-screen flex-1"
             >
               <img
@@ -172,15 +171,18 @@ const TaborCollege = () => {
               />
             </motion.div>
           </motion.div>
-          <div className="p-12 mb-10 lg:mt-5">
+          <div className="p-12 mb-15 md:mt-5 lg:mt-10">
             <Slider
               afterChange={(current) => setCurrentSlide(current)}
-              className="mx-auto max-w-[1260px] cursor-grab gradient-05 rounded-2xl pt-8"
+              className="mx-auto max-w-[1040px] cursor-grab gradient-05 rounded-2xl pt-8"
               {...settings(currentSlide)}
               appendDots={Dots}
             >
               {images.map((item) => (
-                <div className="w-full h-[450px] xl:h-[550px]">
+                <div
+                  key={item.description}
+                  className="w-full h-[450px] xl:h-[500px]"
+                >
                   <img
                     className="w-full h-full object-contain rounded-lg"
                     src={item.source}

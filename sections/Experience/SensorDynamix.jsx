@@ -42,7 +42,7 @@ const SensorDynamix = () => (
       </motion.div>
       {/* Job Description */}
       <motion.div
-        variants={fadeIn('right', 'tween', 0.5, 1)}
+        variants={fadeIn('up', 'tween', 0.5, 1)}
         className="mt-[31px] w-full flex items-center justify-center gap-8 lg:gap-24 xl:gap-24 2xl:gap-40 mx-auto flex-col lg:flex-row"
       >
         {/* Card */}
@@ -74,7 +74,7 @@ const SensorDynamix = () => (
           </ul>
         </div>
         <motion.div
-          variants={fadeIn('left', 'tween', 0.8, 1)}
+          variants={fadeIn('up', 'tween', 0.8, 1)}
           className="flex flex-col gap-8 lg:gap-14 2xl:gap-16"
         >
           <div className={`${styles.mockupCard}`}>
