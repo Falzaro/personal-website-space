@@ -12,7 +12,7 @@ const About = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
+      viewport={{ once: true }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col gradient-05 rounded-2xl lg:py-8 p-6 pt-8 md:p-10 lg:px-16`}
     >
       <TypingText title="| About me" textStyles="text-center" />

@@ -14,7 +14,6 @@ const styles = {
   mockupCard:
     'flex flex-col border border-gray-600 p-6 w-full max-w-md lg:max-w-[290px] lg:mx-h-[250px] mx-auto overflow-hidden shadow-lg rounded-lg cursor-pointer transform-origin-center transition-transform duration-200',
   navItem: 'xl:hover:bg-slate-900 xl:py-3 xl:px-6 rounded-full underline-none',
-  // navItem: 'hover:bg-slate-900 py-3 px-6 rounded-full',
 
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-start items-start',
