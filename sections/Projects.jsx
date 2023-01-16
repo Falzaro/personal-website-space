@@ -7,6 +7,11 @@ import { staggerContainer } from '../utils/motion';
 import { TitleText, TypingText } from '../components';
 import ProjectCard from '../components/ProjectCard';
 
+import musicAppImage from '../public/music-app.png';
+import moviesAppImage from '../public/movies-app.png';
+import foodAppImage from '../public/food-app.png';
+import socialMediaAppImage from '../public/social-media-app.png';
+
 const Projects = () => (
   <section id="projects" className={`${styles.paddings} mb-24 relative z-10`}>
     <motion.div
@@ -22,10 +27,10 @@ const Projects = () => (
         textStyles="text-center md:text-[42px]"
       />
       <div className="flex flex-wrap justify-center mt-20 gap-16 lg:gap-x-24 lg:gap-y-18 mx-auto">
-        <ProjectCard name="music app" source="/music app.png" />
-        <ProjectCard name="movies app" source="/movies app.png" />
-        <ProjectCard name="social media app" source="/social media app.png" />
-        <ProjectCard name="food app" source="/food app.png" />
+        <ProjectCard name="music app" source={musicAppImage} />
+        <ProjectCard name="movies app" source={moviesAppImage} />
+        <ProjectCard name="social media app" source={socialMediaAppImage} />
+        <ProjectCard name="food app" source={foodAppImage} />
       </div>
     </motion.div>
   </section>

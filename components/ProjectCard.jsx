@@ -5,14 +5,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const ProjectCard = ({ source, name }) => (
-  <div className="relative w-[400px] max-h-[324px] shadow-xl rounded-xl cursor-pointer transform-origin-center transition-transform duration-200">
-    <Image
-      className="object-contain"
-      src={source}
-      alt={name}
-      width={500}
-      height={500}
-    />
+  <div className="relative w-[350px] max-h-[324px] shadow-xl rounded-xl cursor-pointer transform-origin-center transition-transform duration-200">
+    <Image className="object-contain" src={source} alt={name} />
     <motion.div
       variants={{
         hidden: {

@@ -1,11 +1,17 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import SkillsCard from '../components/SkillsCard';
+
+import mapImage from '../public/map.png';
+import serversImage from '../public/servers.png';
+import frontendImage from '../public/frontend.png';
+import designImage from '../public/design.png';
 
 const Skills = () => (
   <section id="skills" className={`${styles.paddings} relative z-10 mt-10`}>
@@ -34,8 +40,8 @@ const Skills = () => (
         className="relative mt-[68px] flex w-full"
       >
         <div className="absolute flex w-full h-[550px]">
-          <img
-            src="/map.png"
+          <Image
+            src={mapImage}
             alt="map"
             className="w-full h-full object-cover"
           />
@@ -45,7 +51,7 @@ const Skills = () => (
         >
           <motion.div variants={fadeIn('up', 'tween', 0.3, 1)}>
             <SkillsCard
-              source="/servers.png"
+              source={serversImage}
               title="Backend"
               items={[
                 'NodeJS',
@@ -61,7 +67,7 @@ const Skills = () => (
           </motion.div>
           <motion.div variants={fadeIn('up', 'tween', 0.6, 1)}>
             <SkillsCard
-              source="/frontend.png"
+              source={frontendImage}
               title="Frontend"
               items={[
                 'React',
@@ -77,7 +83,7 @@ const Skills = () => (
           </motion.div>
           <motion.div variants={fadeIn('up', 'tween', 0.9, 1)}>
             <SkillsCard
-              source="/design.png"
+              source={designImage}
               title="UI/UX"
               items={['Figma', 'Adobe XD', 'Photoshop']}
             />
