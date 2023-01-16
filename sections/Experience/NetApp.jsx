@@ -14,7 +14,7 @@ const NetApp = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
+      // viewport={{ once: true }}
       className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}
     >
       <TypingText title="| Experience" textStyles="text-center" />

@@ -17,7 +17,7 @@ const SensorDynamix = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
+      // viewport={{ once: true }}
       className="max-w-[1440px] mx-auto flex flex-col gap-8"
     >
       <motion.div
