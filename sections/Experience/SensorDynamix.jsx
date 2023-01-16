@@ -24,10 +24,12 @@ const SensorDynamix = () => (
       >
         {/* Company name */}
         <div className="flex items-center mx-auto lg:mb-10">
-          <img
+          <Image
             src="/single planet sensor dynamix.svg"
-            alt="get-started"
-            className="w-1/4 h-1/4 object-contain -mb-2"
+            alt="Planet"
+            className="object-contain -mb-2"
+            width={200}
+            height={200}
           />
           <div className="flex flex-col">
             <TitleText

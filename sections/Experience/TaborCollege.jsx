@@ -114,11 +114,11 @@ const TaborCollege = () => {
           {/* Company name */}
           <div className="flex items-center mx-auto lg:mb-10">
             <Image
-              src="/single planet Tabor College.svg"
-              alt="get-started"
-              className="w-1/4 h-1/4 object-contain -mb-2"
-              width={100}
-              height={100}
+              src="/single planet tabor college.svg"
+              alt="Planet"
+              className="object-contain -mb-2"
+              width={200}
+              height={200}
             />
             <div className="flex flex-col">
               <TitleText
@@ -185,11 +185,12 @@ const TaborCollege = () => {
                   className="w-full h-[450px] xl:h-[500px]"
                 >
                   <Image
+                    priority
                     className="w-full h-full object-contain rounded-lg"
                     src={item.source}
                     alt={item.description}
-                    width={500}
-                    height={500}
+                    width={600}
+                    height={600}
                   />
                 </div>
               ))}
