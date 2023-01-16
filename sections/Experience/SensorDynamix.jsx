@@ -6,6 +6,9 @@ import Image from 'next/image';
 import { TitleText } from '../../components';
 import { staggerContainer, fadeIn } from '../../utils/motion';
 
+import websiteMockupImage from '../../public/website-mockup.png';
+import mobileMockupImage from '../../public/mobile-mockup.png';
+
 import styles from '../../styles';
 
 const SensorDynamix = () => (
@@ -80,13 +83,11 @@ const SensorDynamix = () => (
             <div className={`${styles.mockupCard}`}>
               <Image
                 className="w-full object-contain"
-                src="/website-mockup.png"
+                src={websiteMockupImage}
                 alt="website mockup"
-                width={500}
-                height={500}
               />
               <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
-                Website Mockup
+                Mobile Mockup
               </p>
             </div>
           </a>
@@ -98,10 +99,8 @@ const SensorDynamix = () => (
             <div className={`${styles.mockupCard}`}>
               <Image
                 className="w-full object-contain"
-                src="/mobile-mockup.png"
+                src={mobileMockupImage}
                 alt="mobile mockup"
-                width={500}
-                height={500}
               />
               <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
                 Mobile Mockup
@@ -111,7 +110,7 @@ const SensorDynamix = () => (
         </motion.div>
       </motion.div>
     </motion.div>
-    <div className="gradient-04 z-0" />
+    <div className="gradient-04 pointer-events-none" />
   </section>
 );
 

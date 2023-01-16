@@ -11,37 +11,48 @@ import { staggerContainer, fadeIn } from '../../utils/motion';
 
 import styles from '../../styles';
 
+import spaceshipImage from '../../public/spaceship.png';
+import taborCollegeImage from '../../public/tabor_college.png';
+import mapsImage from '../../public/maps.png';
+import taborCollegePlanetImage from '../../public/single-planet-tabor-college.svg';
+import athleticsImage from '../../public/athletics_1.png';
+import diningHallImage from '../../public/dining_hall.png';
+import helpfulHoursImage from '../../public/helpful_hours.png';
+import athleticsImageTwo from '../../public/athletics_2.png';
+import jayshopImage from '../../public/jayshop.png';
+import studentLifeImage from '../../public/student_life.png';
+
 const images = [
   {
-    source: '/tabor_college.png',
+    source: taborCollegeImage,
     description: 'Tabor College',
   },
   {
-    source: '/maps.png',
+    source: mapsImage,
     description: 'Maps',
   },
   {
-    source: '/athletics_1.png',
+    source: athleticsImage,
     description: 'Athletics',
   },
   {
-    source: '/dining_hall.png',
+    source: diningHallImage,
     description: 'Dining Hall',
   },
   {
-    source: '/helpful_hours.png',
+    source: helpfulHoursImage,
     description: 'Helpful Hours',
   },
   {
-    source: '/athletics_2.png',
+    source: athleticsImageTwo,
     description: 'Athletics',
   },
   {
-    source: '/jayshop.png',
+    source: jayshopImage,
     description: 'Jayshop',
   },
   {
-    source: '/student_life.png',
+    source: studentLifeImage,
     description: 'student life',
   },
 ];
@@ -114,13 +125,11 @@ const TaborCollege = () => {
           {/* Company name */}
           <div className="flex items-center mx-auto lg:mb-10">
             <Image
-              src="/single-planet-tabor-college.svg"
+              src={taborCollegePlanetImage}
               alt="Planet"
               className="w-1/4 h-1/4 object-contain -mb-2"
-              width={150}
-              height={150}
             />
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full">
               <TitleText
                 title={<>Tabor College</>}
                 textStyles="lg:text-center"
@@ -164,11 +173,9 @@ const TaborCollege = () => {
               className="w-[50%] max-w-[500px] max-h-[500px] hidden lg:block h-screen flex-1"
             >
               <Image
-                src="/spaceship.png"
+                src={spaceshipImage}
                 alt="spaceship"
                 className="w-full h-full object-contain rounded-xl"
-                width={500}
-                height={500}
               />
             </motion.div>
           </motion.div>
@@ -189,8 +196,6 @@ const TaborCollege = () => {
                     className="w-full h-full object-contain rounded-lg"
                     src={item.source}
                     alt={item.description}
-                    width={600}
-                    height={600}
                   />
                 </div>
               ))}
