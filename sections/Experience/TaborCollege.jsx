@@ -196,6 +196,8 @@ const TaborCollege = () => {
                     className="w-full h-full object-contain rounded-lg"
                     src={item.source}
                     alt={item.description}
+                    width={350}
+                    height={500}
                   />
                 </div>
               ))}

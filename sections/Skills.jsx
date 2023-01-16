@@ -41,6 +41,7 @@ const Skills = () => (
       >
         <div className="absolute hidden md:flex w-full h-[550px]">
           <Image
+            priority
             src={mapImage}
             alt="map"
             className="w-full h-full object-cover"
