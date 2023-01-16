@@ -15,8 +15,8 @@ import designImage from '../public/design.png';
 
 const Skills = () => (
   <section id="skills" className={`${styles.paddings} relative z-10 mt-10`}>
-    <div className="gradient-04 left-0 top-20 pointer-events-none" />
-    <div className="gradient-04 pointer-events-none" />
+    {/* <div className="gradient-04 left-0 top-20 pointer-events-none" />
+    <div className="gradient-04 pointer-events-none" /> */}
     <motion.div
       variants={staggerContainer}
       initial="hidden"

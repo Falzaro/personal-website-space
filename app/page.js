@@ -6,9 +6,16 @@ const Page = () => (
   <div className="bg-primary-black overflow-hidden">
     <Navbar />
     <Hero />
-    <About />
+    <div className="relative">
+      <div className="gradient-02 z-0" />
+      <About />
+    </div>
     <Experience />
-    <Skills />
+    <div className="relative">
+      <div className="gradient-04 left-0 top-20 pointer-events-none" />
+      <div className="gradient-04 pointer-events-none" />
+      <Skills />
+    </div>
     <Projects />
     <Footer />
   </div>

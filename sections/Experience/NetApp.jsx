@@ -79,7 +79,7 @@ const NetApp = () => (
           </motion.div>
         </motion.div>
       </motion.div>
-      <div className="gradient-03 z-0" />
+      {/* <div className="gradient-03 z-0" /> */}
     </motion.div>
   </section>
 );

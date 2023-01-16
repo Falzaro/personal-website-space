@@ -11,7 +11,7 @@ const SkillsCard = ({ source, title, items, delay }) => (
     className="flex flex-col h-[690px] lg:h-[650px] max-w-[220px] min-w-[300px] lg:max-w-[260px] rounded-lg bg-[#21262D] shadow-xl z-20"
   >
     <div className="max-h-[262px]">
-      <Image src={source} alt={title} className="object-contain" />
+      <Image priority src={source} alt={title} className="object-contain" />
     </div>
     <div className="flex-1 flex flex-col justify-center items-center p-6">
       <p className="text-white text-[28px] font-bold text-center mb-3">

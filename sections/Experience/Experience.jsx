@@ -6,9 +6,18 @@ import TaborCollege from './TaborCollege';
 
 const Experience = () => (
   <>
-    <NetApp />
-    <SensorDynamix />
-    <TaborCollege />
+    <div className="relative">
+      <div className="gradient-03 z-0" />
+      <NetApp />
+    </div>
+    <div className="relative">
+      <div className="gradient-04 pointer-events-none z-0" />
+      <SensorDynamix />
+    </div>
+    <div className="relative">
+      <TaborCollege />
+      <div className="gradient-03 z-0" />
+    </div>
   </>
 );
 

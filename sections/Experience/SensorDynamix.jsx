@@ -112,7 +112,7 @@ const SensorDynamix = () => (
         </motion.div>
       </motion.div>
     </motion.div>
-    <div className="gradient-04 pointer-events-none" />
+    {/* <div className="gradient-04 pointer-events-none" /> */}
   </section>
 );
 
