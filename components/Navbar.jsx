@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Dialog, Transition } from '@headlessui/react';
@@ -39,10 +40,12 @@ const Navbar = () => {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between items-center gap-8`}
       >
-        <img
+        <Image
           src="/menu.svg"
           alt="menu"
           className="w-[24px] h-[24px] object-contain -rotate-180 cursor-pointer lg:hidden"
+          width={24}
+          height={24}
           onClick={() => setMobileMenuOpen(true)}
         />
         <div className="hidden lg:flex text-white space-x-[105px] font-medium text-[24px] [&>*]:cursor-pointer">
@@ -63,10 +66,12 @@ const Navbar = () => {
           <div
             className={`${styles.flexCenter} ${styles.navItem} gap-2 cursor-pointer `}
           >
-            <img
+            <Image
               src="/download.png"
               alt="search"
-              className="w-[24px] h-[24px] object-contain mt-1"
+              className="object-contain mt-1"
+              width={24}
+              height={24}
             />
             <p className="text-white text-[24px] font-medium">Resume</p>
           </div>

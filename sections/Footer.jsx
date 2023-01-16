@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 const Footer = () => (
   <footer className="">
     <div className="w-full mx-auto h-full bg-black rounded-2xl lg:py-10 p-6 pt-8 md:p-10 lg:px-16">
@@ -13,7 +15,7 @@ const Footer = () => (
           rel="noreferrer"
           className="mx-2"
         >
-          <img src="/gmail.svg" alt="gmail" className="w-8 h-8" />
+          <Image src="/gmail.svg" alt="gmail" width={32} height={32} />
         </a>
         <a
           target="_blank"
@@ -21,7 +23,7 @@ const Footer = () => (
           rel="noreferrer"
           className="mx-2"
         >
-          <img src="/github.svg" alt="github" className="w-8 h-8" />
+          <Image src="/github.svg" alt="github" width={32} height={32} />
         </a>
         <a
           href="https://www.linkedin.com/in/kevin-lee-7b1b3b1b3/"
@@ -29,7 +31,7 @@ const Footer = () => (
           rel="noreferrer"
           className="mx-2"
         >
-          <img src="/linkedin.svg" alt="linkedin" className="w-8 h-8" />
+          <Image src="/linkedin.svg" alt="LinkedIn" width={32} height={32} />
         </a>
       </div>
     </div>

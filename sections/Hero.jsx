@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import TypeWriter from 'typewriter-effect';
 
 import styles from '../styles';
@@ -40,10 +41,13 @@ const Hero = () => (
         variants={fadeIn('up', 'tween', 1.6, 1)}
         className="relative w-[80%] mx-auto -mb-12"
       >
-        <img
+        <Image
+          priority
           src="/hero.png"
           alt="hero_cover"
           className="w-full h-full object-cover z-10 relative"
+          width={1920}
+          height={1080}
         />
       </motion.div>
     </motion.div>

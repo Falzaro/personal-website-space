@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Slider from 'react-slick';
+import Image from 'next/image';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { TitleText } from '../../components';
@@ -112,10 +113,12 @@ const TaborCollege = () => {
         >
           {/* Company name */}
           <div className="flex items-center mx-auto lg:mb-10">
-            <img
+            <Image
               src="/single planet Tabor College.svg"
               alt="get-started"
               className="w-1/4 h-1/4 object-contain -mb-2"
+              width={100}
+              height={100}
             />
             <div className="flex flex-col">
               <TitleText
@@ -160,10 +163,12 @@ const TaborCollege = () => {
               variants={fadeIn('up', 'tween', 0.8, 1)}
               className="w-[50%] max-w-[500px] max-h-[500px] hidden lg:block h-screen flex-1"
             >
-              <img
+              <Image
                 src="/spaceship.png"
                 alt="spaceship"
                 className="w-full h-full object-contain rounded-xl"
+                width={500}
+                height={500}
               />
             </motion.div>
           </motion.div>
@@ -179,10 +184,12 @@ const TaborCollege = () => {
                   key={item.description}
                   className="w-full h-[450px] xl:h-[500px]"
                 >
-                  <img
+                  <Image
                     className="w-full h-full object-contain rounded-lg"
                     src={item.source}
                     alt={item.description}
+                    width={500}
+                    height={500}
                   />
                 </div>
               ))}

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 
+import Image from 'next/image';
 import { TitleText, TypingText } from '../../components';
 import { staggerContainer, fadeIn } from '../../utils/motion';
 
@@ -24,10 +25,12 @@ const NetApp = () => (
       >
         {/* Company name */}
         <div className="flex items-center mx-auto lg:mb-10">
-          <img
+          <Image
             src="/single planet netapp.svg"
             alt="get-started"
             className="w-1/4 h-1/4 object-contain -mb-2"
+            width={100}
+            height={100}
           />
           <div className="flex flex-col">
             <TitleText title={<>NetApp</>} textStyles="lg:text-center" />

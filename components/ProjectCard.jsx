@@ -2,10 +2,17 @@
 
 import { EyeIcon, ViewfinderCircleIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const ProjectCard = ({ source, name }) => (
   <div className="relative w-[400px] max-h-[324px] shadow-xl rounded-xl cursor-pointer transform-origin-center transition-transform duration-200">
-    <img className="w-full h-full object-contain" src={source} alt={name} />
+    <Image
+      className="object-contain"
+      src={source}
+      alt={name}
+      width={500}
+      height={500}
+    />
     <motion.div
       variants={{
         hidden: {

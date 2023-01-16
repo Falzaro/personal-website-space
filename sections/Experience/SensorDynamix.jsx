@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import { TitleText } from '../../components';
 import { staggerContainer, fadeIn } from '../../utils/motion';
@@ -15,7 +16,6 @@ const SensorDynamix = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      // className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}
       className="max-w-[1440px] mx-auto flex flex-col gap-8"
     >
       <motion.div
@@ -77,10 +77,12 @@ const SensorDynamix = () => (
             href="https://xd.adobe.com/view/4061448c-8e8b-4352-8657-0d6573552a15-1532/"
           >
             <div className={`${styles.mockupCard}`}>
-              <img
+              <Image
                 className="w-full object-contain"
                 src="/website mockup.png"
                 alt="website mockup"
+                width={500}
+                height={500}
               />
               <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
                 Website Mockup
@@ -93,10 +95,12 @@ const SensorDynamix = () => (
             href="https://xd.adobe.com/view/6c6b2732-ee16-4dfb-aff8-026d25231d2f-3938/"
           >
             <div className={`${styles.mockupCard}`}>
-              <img
+              <Image
                 className="w-full object-contain"
                 src="/mobile mockup.png"
                 alt="mobile mockup"
+                width={500}
+                height={500}
               />
               <p className="pt-4 px-4 text-white text-2xl font-medium text-center rounded-b-xl">
                 Mobile Mockup

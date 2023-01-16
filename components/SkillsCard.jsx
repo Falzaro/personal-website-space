@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 import { fadeIn } from '../utils/motion';
 
@@ -10,7 +11,13 @@ const SkillsCard = ({ source, title, items, delay }) => (
     className="flex flex-col h-[690px] lg:h-[650px] max-w-[320px] lg:max-w-[260px] rounded-lg bg-[#21262D] shadow-xl z-20"
   >
     <div className="max-h-[262px]">
-      <img src={source} alt={title} className="w-full h-full object-contain" />
+      <Image
+        src={source}
+        alt={title}
+        className="object-contain"
+        width={400}
+        height={400}
+      />
     </div>
     <div className="flex-1 flex flex-col justify-center items-center p-6">
       <p className="text-white text-[28px] font-bold text-center mb-3">
