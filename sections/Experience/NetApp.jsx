@@ -10,7 +10,6 @@ import styles from '../../styles';
 
 const NetApp = () => (
   <section id="experience" className={`${styles.paddings} relative z-10`}>
-    <div className="gradient-03 z-0" />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -29,8 +28,8 @@ const NetApp = () => (
             src="/single planet netapp.svg"
             alt="Planet"
             className="object-contain -mb-2"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
           />
           <div className="flex flex-col">
             <TitleText title={<>NetApp</>} textStyles="lg:text-center" />
@@ -80,6 +79,7 @@ const NetApp = () => (
           </motion.div>
         </motion.div>
       </motion.div>
+      <div className="gradient-03 z-0" />
     </motion.div>
   </section>
 );

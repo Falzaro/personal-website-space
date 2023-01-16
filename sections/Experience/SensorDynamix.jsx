@@ -10,7 +10,6 @@ import styles from '../../styles';
 
 const SensorDynamix = () => (
   <section className={`${styles.paddings} relative z-10`}>
-    <div className="gradient-04 z-0" />
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -28,8 +27,8 @@ const SensorDynamix = () => (
             src="/single planet sensor dynamix.svg"
             alt="Planet"
             className="object-contain -mb-2"
-            width={200}
-            height={200}
+            width={100}
+            height={100}
           />
           <div className="flex flex-col">
             <TitleText
@@ -111,6 +110,7 @@ const SensorDynamix = () => (
           </a>
         </motion.div>
       </motion.div>
+      <div className="gradient-04 z-0" />
     </motion.div>
   </section>
 );
