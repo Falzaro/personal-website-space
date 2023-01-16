@@ -82,6 +82,7 @@ const SensorDynamix = () => (
           >
             <div className={`${styles.mockupCard}`}>
               <Image
+                priority
                 className="w-full object-contain"
                 src={websiteMockupImage}
                 alt="website mockup"
@@ -98,6 +99,7 @@ const SensorDynamix = () => (
           >
             <div className={`${styles.mockupCard}`}>
               <Image
+                priority
                 className="w-full object-contain"
                 src={mobileMockupImage}
                 alt="mobile mockup"

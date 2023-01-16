@@ -21,7 +21,7 @@ const Skills = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText title="| skills" textStyles="text-center" />
@@ -39,7 +39,7 @@ const Skills = () => (
         variants={fadeIn('up', 'tween', 0.5, 1)}
         className="relative mt-[68px] flex w-full"
       >
-        <div className="absolute flex w-full h-[550px]">
+        <div className="absolute hidden md:flex w-full h-[550px]">
           <Image
             src={mapImage}
             alt="map"

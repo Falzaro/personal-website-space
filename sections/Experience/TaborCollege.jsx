@@ -115,7 +115,7 @@ const TaborCollege = () => {
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true }}
         className="2xl:max-w-[1440px] mx-auto flex flex-col gap-8"
       >
         <motion.div

@@ -26,7 +26,7 @@ const Projects = () => (
         title={<>Explore spectacular projects I've put together!</>}
         textStyles="text-center md:text-[42px]"
       />
-      <div className="flex flex-wrap justify-center mt-20 gap-16 lg:gap-x-24 lg:gap-y-18 mx-auto">
+      <div className="flex flex-wrap justify-center items-center mt-20 gap-16 lg:gap-x-24 lg:gap-y-18 mx-auto">
         <ProjectCard name="music app" source={musicAppImage} />
         <ProjectCard name="movies app" source={moviesAppImage} />
         <ProjectCard name="social media app" source={socialMediaAppImage} />
