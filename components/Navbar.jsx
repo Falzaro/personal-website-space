@@ -120,6 +120,8 @@ const Navbar = () => {
                 <div className="py-6">
                   {social.map((item) => (
                     <a
+                      target="_blank"
+                      rel="noreferrer"
                       key={item.name}
                       href={item.href}
                       className="-mx-3 block rounded-lg py-2.5 px-3 text-base font-semibold leading-6 text-gray-900 hover:bg-gray-400/10"
