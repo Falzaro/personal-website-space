@@ -25,11 +25,11 @@ const NetApp = () => (
         {/* Company name */}
         <div className="flex items-center mx-auto lg:mb-10">
           <Image
-            src="/single planet netapp.svg"
+            src="/single-planet-netapp.svg"
             alt="Planet"
-            className="object-contain -mb-2"
-            width={100}
-            height={100}
+            className="w-1/4 h-1/4 object-contain -mb-2"
+            width={150}
+            height={150}
           />
           <div className="flex flex-col">
             <TitleText title={<>NetApp</>} textStyles="lg:text-center" />

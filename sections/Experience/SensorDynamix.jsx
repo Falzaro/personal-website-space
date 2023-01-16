@@ -24,11 +24,11 @@ const SensorDynamix = () => (
         {/* Company name */}
         <div className="flex items-center mx-auto lg:mb-10">
           <Image
-            src="/single planet sensor dynamix.svg"
+            src="/single-planet-sensor-dynamix.svg"
             alt="Planet"
-            className="object-contain -mb-2"
-            width={100}
-            height={100}
+            className="w-1/4 h-1/4 object-contain -mb-2"
+            width={150}
+            height={150}
           />
           <div className="flex flex-col">
             <TitleText
@@ -80,7 +80,7 @@ const SensorDynamix = () => (
             <div className={`${styles.mockupCard}`}>
               <Image
                 className="w-full object-contain"
-                src="/website mockup.png"
+                src="/website-mockup.png"
                 alt="website mockup"
                 width={500}
                 height={500}
@@ -98,7 +98,7 @@ const SensorDynamix = () => (
             <div className={`${styles.mockupCard}`}>
               <Image
                 className="w-full object-contain"
-                src="/mobile mockup.png"
+                src="/mobile-mockup.png"
                 alt="mobile mockup"
                 width={500}
                 height={500}
@@ -110,8 +110,8 @@ const SensorDynamix = () => (
           </a>
         </motion.div>
       </motion.div>
-      <div className="gradient-04 z-0" />
     </motion.div>
+    <div className="gradient-04 z-0" />
   </section>
 );
 

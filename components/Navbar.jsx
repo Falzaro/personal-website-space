@@ -69,7 +69,7 @@ const Navbar = () => {
             <Image
               src="/download.png"
               alt="search"
-              className="object-contain mt-1"
+              className="w-[24px] h-[24px] object-contain mt-1"
               width={24}
               height={24}
             />

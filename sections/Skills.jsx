@@ -15,7 +15,7 @@ const Skills = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.2 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <TypingText title="| skills" textStyles="text-center" />
@@ -29,7 +29,6 @@ const Skills = () => (
           textStyles="text-center md:text-[42px]"
         />
       </motion.div>
-
       <motion.div
         variants={fadeIn('up', 'tween', 0.5, 1)}
         className="relative mt-[68px] flex w-full"
