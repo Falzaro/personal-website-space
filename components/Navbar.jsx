@@ -20,7 +20,7 @@ const navigation = [
 const social = [
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/kevin-lee-7b1b3b1b3/',
+    href: 'https://www.linkedin.com/in/fitri-rozi-7b4180179/',
   },
   { name: 'Github', href: 'https://github.com/Falzaro' },
   { name: 'Gmail', href: 'mailto:fitrirozi1@gmail.com' },

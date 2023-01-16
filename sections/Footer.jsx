@@ -26,7 +26,7 @@ const Footer = () => (
           <Image src="/github.svg" alt="github" width={32} height={32} />
         </a>
         <a
-          href="https://www.linkedin.com/in/kevin-lee-7b1b3b1b3/"
+          href="https://www.linkedin.com/in/fitri-rozi-7b4180179/"
           target="_blank"
           rel="noreferrer"
           className="mx-2"
