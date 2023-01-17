@@ -62,6 +62,7 @@ const settings = (currentSlide) => ({
   infinite: true,
   speed: 400,
   autoplay: true,
+  lazyLoad: 'ondemand',
   autoplaySpeed: 4000,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -179,7 +180,7 @@ const TaborCollege = () => {
               />
             </motion.div>
           </motion.div>
-          <div className="p-12 mb-15 md:mt-5 lg:mt-10">
+          <div className="hidden md:block p-12 mb-15 md:mt-5 lg:mt-10">
             <Slider
               afterChange={(current) => setCurrentSlide(current)}
               className="mx-auto max-w-[1040px] cursor-grab gradient-05 rounded-2xl pt-8"
