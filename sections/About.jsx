@@ -20,19 +20,21 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal md:text-[28px] text-[20px] text-center text-secondary-white"
       >
-        I am a Computer Science major with{' '}
+        As a software developer with{' '}
         <span className="font-extrabold text-white">
-          three years of professional experience
-        </span>{' '}
-        in software development. I have contributed to the development of
-        several <span className="font-extrabold text-white">large-scale</span>{' '}
-        web applications, including a proprietary reservation system for a{' '}
+          five years of experience
+        </span>
+        , I have built several large-scale web applications for diverse clients
+        and users. Some of my notable projects include a proprietary reservation
+        system for a{' '}
         <span className="font-extrabold text-white">Fortune 500 company</span>{' '}
-        and a mobile app for a college with{' '}
-        <span className="font-extrabold text-white">over 700 students</span> and
-        faculty. I am passionate about using technology to create meaningful
-        change and love to work with a team of like-minded individuals who share
-        similar passion.
+        and a mobile app for{' '}
+        <span className="font-extrabold text-white">700+ college students</span>
+        . I also have startup experience where I learned to thrive in a
+        fast-paced environment and deliver projects under tight deadlines. I am
+        passionate about using technology to create meaningful change and love
+        to collaborate with a team of like-minded innovators. Let’s work
+        together and be at the frontier of innovations!
       </motion.p>
     </motion.div>
   </section>

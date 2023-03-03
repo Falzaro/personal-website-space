@@ -7,8 +7,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins', sans-serif; */
-  font-family: 'Eudoxus Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Eudoxus Sans', sans-serif; */
   scroll-behavior: smooth;
 }
 
@@ -117,4 +117,10 @@
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+}
+
+.green-pink-gradient {
+  background: '#00cea8';
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
