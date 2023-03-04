@@ -105,3 +105,48 @@ export const services = [
   //   icon: '/creator.png',
   // },
 ];
+
+export const experiences = [
+  {
+    title: 'Fullstack Developer',
+    company_name: 'NetApp',
+    icon: '/netapp_logo.svg',
+    iconBg: '#383E56',
+    size: 'w-[45%] h-[45%]',
+    date: 'September 2020 - December 2022',
+    points: [
+      'Mentored 12+ junior developers and spearheaded the front-end development of an enterprise reservation app from concept to beta release using React, Redux, Material-UI, Azure, OAuth, and Docker.',
+      'Implemented a reservation dashboard and tool management page with advanced filters & dynamic forms to manage 15k+ rows of reservations and 40+ tools, increasing efficiency by 20% and reducing errors by 15%.',
+      'Managed PostgreSQL databases and Python Django Restful APIs, handling 10K+ daily requests & 100GB+ data.',
+      'Refactored APIs into smaller, targeted requests to reduce data bloat, resulting in 50% faster load time and 75% fewer database queries.',
+    ],
+  },
+  {
+    title: 'Tech Lead',
+    company_name: 'Tabor college',
+    icon: '/tabor_college_logo.svg',
+    iconBg: '#E6DEDD',
+    size: 'h-[45%]',
+    date: 'August 2021 - May 2022',
+    points: [
+      'Led a team to develop a mobile app using React Native, NodeJS, and Google Cloud Platform, delivering real-time updates on campus activities for 700+ students.',
+      'Developed a cloud scheduler for parallel processing to reduce data loading time from 4000 ms to 20 ms.',
+      'Designed an interactive map that displays 44+ locations of classrooms & buildings using the Google Maps API.',
+      'Successfully drove the entire team to ship the app to the App Store and Google Play',
+    ],
+  },
+  {
+    title: 'Software Engineer Intern',
+    company_name: 'Sensor Dynamix',
+    icon: '/sensor_dynamix_logo.svg',
+    iconBg: '#E6DEDD',
+    size: 'h-12',
+    date: 'May 2020 - August 2020',
+    points: [
+      'Developed a cross-platform app using React Native, React, and NodeJS for clients to interact with IoT sensors.',
+      'Built an admin page and dashboard to efficiently manage 50,000+ customers and 100,000+ devices with integrated SSO login.',
+      'Established robust email brokerage using Google Cloud Platform for high volume of up to 100,000 emails/day.',
+      'Designed mobile and website mockups with over 200 artboards using Adobe XD.',
+    ],
+  },
+];

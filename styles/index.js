@@ -26,6 +26,8 @@ const styles = {
     'font-bold lg:text-[86px] md:text-[64px] sm:text-[48px] text-[36px] lg:leading-[88.8px] md:leading-[63.6px] sm:leading-[41.6px] leading-[35.6px] text-white mb-4',
   heroSubHeading:
     'font-medium lg:text-[40px] md:text-[42px] sm:text-[30px] text-[24px] lg:leading-[70.4px] md:leading-[53.2px] sm:leading-[35.2px] leading-[29.2px] text-white',
+
+  sectionHeadText: 'font-bold text-[44px] leading-[35.6px] text-white',
 };
 
 export default styles;
