@@ -15,8 +15,6 @@ import designImage from '../public/design.png';
 
 const Skills = () => (
   <section id="skills" className={`${styles.paddings} relative z-10 mt-20`}>
-    {/* <div className="gradient-04 left-0 top-20 pointer-events-none" />
-    <div className="gradient-04 pointer-events-none" /> */}
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -27,16 +25,6 @@ const Skills = () => (
       <h2 className={`${styles.sectionHeadText} text-center`}>
         Technical Skills
       </h2>
-      {/* <motion.div variants={fadeIn('up', 'tween', 0.3, 1)}>
-        <TitleText
-          title={
-            <>
-              Dedicated to mastering the latest and most scalable technologies
-            </>
-          }
-          textStyles="text-center md:text-[42px]"
-        />
-      </motion.div> */}
       <motion.div
         variants={fadeIn('up', 'tween', 0.5, 1)}
         className="relative mt-[68px] flex w-full"

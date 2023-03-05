@@ -1,8 +1,9 @@
 import { Navbar } from '../components';
-import ServiceCard from '../components/ServiceCard';
 import { About, Skills, Hero, Projects, Footer } from '../sections';
 import Experience from '../sections/Experience/Experience';
-import { services } from '../constants';
+import Contact from '../sections/Contact';
+import { StarsCanvas } from '../components/canvas';
+import Roles from '../components/Roles';
 
 const Page = () => (
   <div className="bg-primary-black overflow-hidden">
@@ -11,11 +12,7 @@ const Page = () => (
     <div className="relative">
       <div className="gradient-02 z-0" />
       <About />
-      <div className="mt-20 flex flex-wrap gap-10 justify-center">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+      <Roles />
     </div>
     <Experience />
     <div className="relative">
@@ -24,6 +21,10 @@ const Page = () => (
       <Skills />
     </div>
     <Projects />
+    <div className="relative z-0">
+      <Contact />
+      <StarsCanvas />
+    </div>
     <Footer />
   </div>
 );

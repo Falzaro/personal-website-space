@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
+import { motion } from 'framer-motion';
 
 import VanillaTilt from 'vanilla-tilt';
+import { fadeIn } from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon }) => {
   const tiltRef = useRef(null);
@@ -18,7 +20,11 @@ const ServiceCard = ({ index, title, icon }) => {
   }, []);
 
   return (
-    <div ref={tiltRef} className="w-[250px] rounded-[20px]">
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      ref={tiltRef}
+      className="w-[250px] rounded-[20px]"
+    >
       <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
         <div className="bg-primary-black rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
           <img
@@ -32,7 +38,7 @@ const ServiceCard = ({ index, title, icon }) => {
           </h3>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

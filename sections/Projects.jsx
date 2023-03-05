@@ -6,13 +6,6 @@ import VanillaTilt from 'vanilla-tilt';
 
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
-// import { TitleText, TypingText } from '../components';
-// import ProjectCard from '../components/ProjectCard';
-
-// import musicAppImage from '../public/music-app.png';
-// import moviesAppImage from '../public/movies-app.png';
-// import foodAppImage from '../public/food-app.png';
-// import socialMediaAppImage from '../public/social-media-app.png';
 import { projects } from '../constants';
 
 const ProjectCard = ({
@@ -36,7 +29,10 @@ const ProjectCard = ({
   }, []);
 
   return (
-    <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      viewport={{ once: true }}
+    >
       <div
         ref={tiltRef}
         className="bg-[#1a1d23] p-5 rounded-2xl sm:w-[360px] w-full shadow-xl"
@@ -100,7 +96,7 @@ const Projects = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>

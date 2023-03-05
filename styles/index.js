@@ -4,6 +4,7 @@ const styles = {
   interWidth: 'lg:w-[90%] w-[100%]',
 
   paddings: 'sm:px-16 sm:pt-16 xs:px-8 xs:pt-8 px-6 pt-12',
+  paddingTest: 'sm:px-16 px-6 sm:py-16 py-10',
   yPaddings: 'sm:py-16 xs:py-8 py-12',
   xPaddings: 'sm:px-16 px-6',
   topPaddings: 'sm:pt-16 xs:pt-8 pt-12',
@@ -28,6 +29,8 @@ const styles = {
     'font-medium lg:text-[40px] md:text-[42px] sm:text-[30px] text-[24px] lg:leading-[70.4px] md:leading-[53.2px] sm:leading-[35.2px] leading-[29.2px] text-white',
 
   sectionHeadText: 'font-bold text-[44px] leading-[35.6px] text-white',
+  sectionSubText:
+    'sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider',
 };
 
 export default styles;
