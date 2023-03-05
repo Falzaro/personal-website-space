@@ -4,21 +4,21 @@ import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { startingFeatures } from '../constants';
-import { StartSteps, TitleText, TypingText } from '../components';
 import {
   staggerContainer,
   fadeIn,
   planetVariants,
   textVariant,
 } from '../utils/motion';
+import TechCard from '../components/TechCard';
 
 const GetStarted = () => (
-  <section className={`${styles.paddings} relative z-10`}>
+  <section id="skills" className={`${styles.paddings} relative z-10`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
@@ -33,20 +33,16 @@ const GetStarted = () => (
       </motion.div>
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
-        className="flex-[0.75] flex justify-center flex-col"
+        className="flex-[0.90] flex justify-center flex-col"
       >
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText}`}>TECHNOLOGIES LEARNED</p>
           <h2 className={`${styles.sectionHeadText}`}>Technical Skills.</h2>
         </motion.div>
-        <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]">
+        {/* <div className="mt-[31px] flex flex-col max-w-[370px] gap-[24px]"> */}
+        <div className="mt-[31px] max-w-[600px] grid grid-cols-1 lg:grid-cols-2 gap-7">
           {startingFeatures.map((feature, index) => (
-            <StartSteps
-              key={feature}
-              // number={`${index < 10 ? '0' : ''} ${index + 1}`}
-              // text={feature}
-              feature={feature}
-            />
+            <TechCard key={feature} feature={feature} />
           ))}
         </div>
       </motion.div>

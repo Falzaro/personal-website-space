@@ -37,12 +37,11 @@ export const exploreWorlds = [
 export const startingFeatures = [
   {
     title: 'Frontend',
+    image: '/single-planet-netapp.svg',
     techs: [
       'React',
-      'Next.js',
       'HTML',
       'CSS',
-      'JavaScript',
       'TypeScript',
       'Redux',
       'Tailwind',
@@ -53,6 +52,7 @@ export const startingFeatures = [
   },
   {
     title: 'Backend',
+    image: '/single-planet-sensor-dynamix.svg',
     techs: [
       'Node.js',
       'Express',
@@ -62,13 +62,11 @@ export const startingFeatures = [
       'Python',
       'Django',
       'Docker',
-      'Google Cloud Platform',
-      'Azure',
-      'AWS',
     ],
   },
   {
-    title: 'Tools',
+    title: 'Tools/Testing',
+    image: '/single-planet-tabor-college.svg',
     techs: [
       'Git',
       'GitHub',
@@ -78,13 +76,17 @@ export const startingFeatures = [
       'Webpack',
       'Jenkins',
       'Jest',
-      'TDD',
-      'CI/CD',
       'Linux',
     ],
   },
   {
+    title: 'Cloud',
+    image: '/single-planet-cloud.svg',
+    techs: ['Google Cloud Platform', 'Azure', 'AWS', 'Stripe'],
+  },
+  {
     title: 'Design',
+    image: '/single-planet-design.svg',
     techs: ['Figma, Adobe XD'],
   },
 ];

@@ -21,7 +21,7 @@ const Page = () => (
       <About />
       <Roles />
     </div>
-    <div className="relative">
+    <div id="experience" className="relative">
       <div className="gradient-03 z-0" />
       <Experience />
     </div>

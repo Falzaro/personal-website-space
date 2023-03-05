@@ -8,6 +8,7 @@ import styles from '../styles';
 import { slideIn } from '../utils/motion';
 import { EarthCanvas } from '../components/canvas';
 import { SectionWrapper } from '../hoc';
+import Modal from './Modal';
 
 const Contact = () => {
   const formRef = useRef();
@@ -81,12 +82,12 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md"
+          <label
+            htmlFor="contact-modal"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-lg cursor-pointer"
           >
             {loading ? 'Sending...' : 'Send'}
-          </button>
+          </label>
         </form>
       </motion.div>
 
@@ -96,6 +97,7 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+      <Modal />
     </div>
   );
 };
