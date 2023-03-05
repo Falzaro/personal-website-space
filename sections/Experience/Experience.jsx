@@ -30,7 +30,6 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
-      {/* <div className="gradient-03 z-0" /> */}
       <h3 className="text-white text-[24px] lg:text-[32px] font-bold">
         {experience.title}
       </h3>

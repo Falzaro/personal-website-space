@@ -26,10 +26,67 @@ export const exploreWorlds = [
   },
 ];
 
+// export const startingFeatures = [
+//   'Find a world that suits you and you want to enter',
+//   'Enter the world by reading basmalah to be safe',
+//   'No need to beat around the bush, just stay on the gas and have fun',
+// ];
+
+// Git, GitHub, Bitbucket, Jira, NPM, Webpack, Jenkins, Jest, TDD, CI/CD, Linux
+
 export const startingFeatures = [
-  'Find a world that suits you and you want to enter',
-  'Enter the world by reading basmalah to be safe',
-  'No need to beat around the bush, just stay on the gas and have fun',
+  {
+    title: 'Frontend',
+    techs: [
+      'React',
+      'Next.js',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'TypeScript',
+      'Redux',
+      'Tailwind',
+      'Material-UI',
+      'Three.js',
+      'React Native',
+    ],
+  },
+  {
+    title: 'Backend',
+    techs: [
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'GraphQL',
+      'PostgreSQL',
+      'Python',
+      'Django',
+      'Docker',
+      'Google Cloud Platform',
+      'Azure',
+      'AWS',
+    ],
+  },
+  {
+    title: 'Tools',
+    techs: [
+      'Git',
+      'GitHub',
+      'Bitbucket',
+      'Jira',
+      'NPM',
+      'Webpack',
+      'Jenkins',
+      'Jest',
+      'TDD',
+      'CI/CD',
+      'Linux',
+    ],
+  },
+  {
+    title: 'Design',
+    techs: ['Figma, Adobe XD'],
+  },
 ];
 
 export const newFeatures = [

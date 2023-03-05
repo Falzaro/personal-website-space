@@ -4,12 +4,9 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { TypingText } from '../components';
-import { services } from '../constants';
-import ServiceCard from '../components/ServiceCard';
 
 const About = () => (
   <section id="aboutMe" className={`${styles.paddings} relative z-10`}>
-    {/* <div className="gradient-02 z-11" /> */}
     <motion.div
       variants={staggerContainer}
       initial="hidden"

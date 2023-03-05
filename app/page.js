@@ -1,5 +1,12 @@
 import { Navbar } from '../components';
-import { About, Skills, Hero, Projects, Footer } from '../sections';
+import {
+  About,
+  Skills,
+  Hero,
+  Projects,
+  Footer,
+  TechincalSkills,
+} from '../sections';
 import Experience from '../sections/Experience/Experience';
 import Contact from '../sections/Contact';
 import { StarsCanvas } from '../components/canvas';
@@ -21,7 +28,8 @@ const Page = () => (
     <div className="relative">
       <div className="gradient-04 left-0 top-20 pointer-events-none" />
       <div className="gradient-04 pointer-events-none" />
-      <Skills />
+      {/* <Skills /> */}
+      <TechincalSkills />
     </div>
     <Projects />
     <div className="relative z-0">
