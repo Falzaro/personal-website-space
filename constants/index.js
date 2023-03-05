@@ -112,7 +112,7 @@ export const experiences = [
     company_name: 'NetApp',
     icon: '/netapp_logo.svg',
     iconBg: '#383E56',
-    size: 'w-[45%] h-[45%]',
+    size: 'h-1/2',
     date: 'September 2020 - December 2022',
     points: [
       'Mentored 12+ junior developers and spearheaded the front-end development of an enterprise reservation app from concept to beta release using React, Redux, Material-UI, Azure, OAuth, and Docker.',
@@ -126,7 +126,7 @@ export const experiences = [
     company_name: 'Tabor college',
     icon: '/tabor_college_logo.svg',
     iconBg: '#E6DEDD',
-    size: 'h-[45%]',
+    size: 'h-1/2',
     date: 'August 2021 - May 2022',
     points: [
       'Led a team to develop a mobile app using React Native, NodeJS, and Google Cloud Platform, delivering real-time updates on campus activities for 700+ students.',
@@ -140,7 +140,7 @@ export const experiences = [
     company_name: 'Sensor Dynamix',
     icon: '/sensor_dynamix_logo.svg',
     iconBg: '#E6DEDD',
-    size: 'h-12',
+    size: 'h-3/4',
     date: 'May 2020 - August 2020',
     points: [
       'Developed a cross-platform app using React Native, React, and NodeJS for clients to interact with IoT sensors.',
@@ -148,5 +148,92 @@ export const experiences = [
       'Established robust email brokerage using Google Cloud Platform for high volume of up to 100,000 emails/day.',
       'Designed mobile and website mockups with over 200 artboards using Adobe XD.',
     ],
+  },
+];
+
+export const projects = [
+  {
+    name: 'Car Rent',
+    description:
+      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './carrent.png',
+    source_code_link: 'https://github.com/',
+  },
+  {
+    name: 'Job IT',
+    description:
+      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'restapi',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'scss',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './jobit.png',
+    source_code_link: 'https://github.com/',
+  },
+  {
+    name: 'Trip Guide',
+    description:
+      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './tripguide.png',
+    source_code_link: 'https://github.com/',
+  },
+  {
+    name: 'Trip Guide',
+    description:
+      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: './tripguide.png',
+    source_code_link: 'https://github.com/',
   },
 ];
