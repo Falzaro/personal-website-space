@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import styles from '../styles';
 import { TitleText, TypingText } from '../components';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 import SkillsCard from '../components/SkillsCard';
 
 import mapImage from '../public/map.png';
@@ -22,9 +22,14 @@ const Skills = () => (
       viewport={{ once: true }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <h2 className={`${styles.sectionHeadText} text-center`}>
-        Technical Skills
-      </h2>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>
+          MASTERING lATEST tECHNOLOGIES
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Technical Skills.
+        </h2>
+      </motion.div>
       <motion.div
         variants={fadeIn('up', 'tween', 0.5, 1)}
         className="relative mt-[68px] flex w-full"

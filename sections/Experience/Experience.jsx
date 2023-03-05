@@ -4,11 +4,13 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+import { motion } from 'framer-motion';
 
 import { experiences } from '../../constants';
 
 import 'react-vertical-timeline-component/style.min.css';
 import styles from '../../styles';
+import { textVariant } from '../../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -28,6 +30,7 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
+      {/* <div className="gradient-03 z-0" /> */}
       <h3 className="text-white text-[24px] lg:text-[32px] font-bold">
         {experience.title}
       </h3>
@@ -57,9 +60,14 @@ const ExperienceCard = ({ experience }) => (
 
 const Experience = () => (
   <>
-    <div className="mt-48">
-      <h2 className={`${styles.sectionHeadText} text-center`}>Experience</h2>
-    </div>
+    <motion.div className="mt-48" variants={textVariant()}>
+      <p className={`${styles.sectionSubText} text-center`}>
+        What I have done so far
+      </p>
+      <h2 className={`${styles.sectionHeadText} text-center`}>
+        Work Experience.
+      </h2>
+    </motion.div>
     <div className="mt-24 flex flex-col">
       <VerticalTimeline>
         {experiences.map((experience, index) => (

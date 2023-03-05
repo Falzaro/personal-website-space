@@ -14,7 +14,10 @@ const Page = () => (
       <About />
       <Roles />
     </div>
-    <Experience />
+    <div className="relative">
+      <div className="gradient-03 z-0" />
+      <Experience />
+    </div>
     <div className="relative">
       <div className="gradient-04 left-0 top-20 pointer-events-none" />
       <div className="gradient-04 pointer-events-none" />

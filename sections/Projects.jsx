@@ -5,8 +5,9 @@ import { motion } from 'framer-motion';
 import VanillaTilt from 'vanilla-tilt';
 
 import styles from '../styles';
-import { fadeIn, staggerContainer } from '../utils/motion';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
 import { projects } from '../constants';
+import { SectionWrapper } from '../hoc';
 
 const ProjectCard = ({
   index,
@@ -99,8 +100,23 @@ const Projects = () => (
       viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2>
-      <div className="mt-20 flex flex-wrap gap-14">
+      {/* <h2 className={`${styles.sectionHeadText} text-center`}>Projects</h2> */}
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText}`}>My work</p>
+        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+      </motion.div>
+      <motion.p
+        variants={fadeIn('up', 'tween', 0.1, 1)}
+        className="mt-3 text-secondary text-[18px] lg:text-[22px] max-w-3xl leading-[30px]"
+      >
+        The following projects showcase my skills and experience through
+        real-world examples of my work. Each project is accompanied by a brief
+        description, as well as links to the corresponding live demo and code
+        repositories. Together, these projects demonstrate my ability to
+        effectively solve complex problems and work with a diverse range of
+        technologies.
+      </motion.p>
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-14">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -109,4 +125,4 @@ const Projects = () => (
   </section>
 );
 
-export default Projects;
+export default SectionWrapper(Projects, 'projects');
