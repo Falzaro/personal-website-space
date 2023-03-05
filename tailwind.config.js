@@ -26,5 +26,5 @@ module.exports = {
   variants: {
     transform: ['responsive'],
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };
